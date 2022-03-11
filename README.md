@@ -5,3 +5,12 @@ The email will also have an attachment with a screenshot of the timetable.
 Example attachment:
 
 <img src="lediga_tider.png" width="350" height="300">
+
+# Installation
+Create a file named .env
+```
+# environment variables
+MY_EMAILS=mail@sending.from
+PASSWORDS=MY_EMAILS_password123
+MOTTAGARES=mail@sending.to
+```
