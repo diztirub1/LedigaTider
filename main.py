@@ -121,12 +121,12 @@ class Browser:
             if "mar" in date.text or "apr" in date.text:
                 print("Det finns en ledig tid")
 
-                lediga_tider = WebDriverWait(self.driver, 10).until(
+                lediga_tider_shot = WebDriverWait(self.driver, 10).until(
                     EC.visibility_of_element_located(
                         (By.XPATH, '//*[@class="timetable"]')
                     )
                 )
-                lediga_tider.screenshot("lediga_tider.png")
+                lediga_tider_shot.screenshot("lediga_tider.png")
 
                 emails = Email()
                 emails.send_email()
