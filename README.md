@@ -12,5 +12,5 @@ Create a file named .env
 # environment variables
 MY_EMAILS=mail@sending.from
 PASSWORDS=MY_EMAILS_password123
-MOTTAGARES=mail@sending.to
+MOTTAGARES=["mail@sending.to","mail2@sending.to"]
 ```

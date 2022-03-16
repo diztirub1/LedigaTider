@@ -27,7 +27,7 @@ class Email:
     def message_email(self):
         message = MIMEMultipart("mixed")
         message["From"] = self.my_email
-        message["To"] = self.mottagare
+        message["To"] = ", ".join(self.mottagare)
         message["Subject"] = "Polisen: Det finns en ledig tid"
         msg_content = "<h4>Morsningkorsning,<br> Det finns en ledig tid att boka nu hörru!<br> <br> Med supervänliga hälsningar,<br> Petter-Niklas Gyllenstånd</h4>\n"
         body = MIMEText(msg_content, "html")
